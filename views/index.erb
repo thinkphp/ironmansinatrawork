@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title><%= @title %></title>
+    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+  </head>
+  <body class='container'>
+    <p>What are you doing now?</p>
+    <form action='action' method='post'>
+      <ul class='unstyled'>
+        <% Choices.each do |id, text| %>
+          <li>
+            <label class='radio'>
+              <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+              <%= text %>
+            </label>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>GO!</button>
+    </form>
+  </body>
+</html>
