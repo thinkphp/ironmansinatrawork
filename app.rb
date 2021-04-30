@@ -2,10 +2,10 @@ require 'sinatra'
 require 'yaml/store'
 
 Choices = {
-  'HAM' => 'Hamburger',
-  'PIZ' => 'Pizza',
-  'CUR' => 'Curry',
-  'NOO' => 'Noodles',
+  'PHP' => 'PHP',
+  'PY' => 'Python',
+  'RB' => 'Ruby',
+  'HS' => 'Haskell'
 }
 
 get '/' do
