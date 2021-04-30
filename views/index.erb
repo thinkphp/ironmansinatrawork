@@ -8,10 +8,17 @@
       .container {
         font-size: 50px
       }
+      li {list-style-type: none}
+      
+      input[type=radio] {
+            border: 0;
+            width: 100px;
+            height: 0.6em;
+      }
     </style>
   </head>
   <body class='container'>
-    <p>What your favorite programming language?</p>
+    <p>What your favourite programming language?</p>
     <form action='action' method='post'>
       <ul class='unstyled'>
         <% Choices.each do |id, text| %>
