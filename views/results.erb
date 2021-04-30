@@ -1,9 +1,19 @@
+    <style>
+      table, tr, td {
+         font-size: 40px;
+         padding: 20px;
+         background-color: mediumseagreen;
+         
+      }
+      th {      color:yellow;}
+    </style>  
+
 <table class='table table-hover table-striped'>
   <% Choices.each do |id, text| %>
     <tr>
       <th><%= text %></th>
       <td><%= @votes[id] || 0 %>
-      <td><%= '#' * (@votes[id] || 0) %></td>
+      <td><%= '#' * (@votes[id] || 0) %> </td>
     </tr>
   <% end %>
 </table>

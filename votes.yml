@@ -1,6 +1,7 @@
 ---
 votes:
-  PHP: 2
-  PY: 1
-  RB: 1
-  HS: 2
+  PHP: 14
+  PY: 10
+  RB: 3
+  HS: 6
+  ! '': 1
